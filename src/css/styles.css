@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle at top left, rgba(78,205,196,1) 0%, rgba(85,98,112,1) 100%);
+    background-attachment: fixed;
+    color: #fff;
+    animation: gradient 5s ease-in-out infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 100% 50%;
+    }
+    50% {
+      background-position: 0 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  #logo img {
+    max-width: 200px;
+  }
+  
+  main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  #whoWeAre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .founder {
+    background: rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    flex: 0 1 calc(30% - 20px);
+    box-sizing: border-box;
+  }
+  
+  @media screen and (max-width: 768px) {
+    #whoWeAre {
+      flex-direction: column;
+    }
+    .founder {
+      flex: 0 1 100%;
+    }
+  }
+  
